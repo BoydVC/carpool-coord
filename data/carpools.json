@@ -1,0 +1,263 @@
+{
+  "title": "Boyd Practice Carpool Coord",
+  "version": 1,
+  "note": "Standing practice carpool facts only — not games. EXAMPLE fills labeled. Always ask before assuming Chris/Beth, Melody, or team-parent coverage.",
+  "weekStarts": "monday",
+  "kids": [
+    {
+      "id": "vic",
+      "name": "Victor",
+      "short": "Vic",
+      "emoji": "⚾",
+      "teams": [
+        "API 11u Solomon baseball",
+        "Green Hornets 12U soccer"
+      ],
+      "color": "#38bdf8",
+      "accent": "#bae6fd"
+    },
+    {
+      "id": "char",
+      "name": "Charlotte",
+      "short": "Char",
+      "emoji": "⚽",
+      "teams": [
+        "Aspire U14G Copa"
+      ],
+      "color": "#e879a9",
+      "accent": "#fbcfe8"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "boyd",
+      "label": "Boyd",
+      "kind": "parent",
+      "needsConfirm": false
+    },
+    {
+      "id": "miranda",
+      "label": "Miranda",
+      "kind": "parent",
+      "needsConfirm": false
+    },
+    {
+      "id": "carpool",
+      "label": "Carpool (peer)",
+      "kind": "carpool",
+      "needsConfirm": false
+    },
+    {
+      "id": "chris-beth",
+      "label": "Chris/Beth",
+      "kind": "grandparent",
+      "needsConfirm": true
+    },
+    {
+      "id": "melody",
+      "label": "Melody",
+      "kind": "grandparent",
+      "needsConfirm": true
+    },
+    {
+      "id": "team-parent",
+      "label": "Team parent",
+      "kind": "team",
+      "needsConfirm": true
+    },
+    {
+      "id": "tbd",
+      "label": "— TBD —",
+      "kind": "open",
+      "needsConfirm": false
+    },
+    {
+      "id": "na",
+      "label": "N/A",
+      "kind": "none",
+      "needsConfirm": false
+    }
+  ],
+  "standing": [
+    {
+      "id": "vic-api-drop",
+      "kid": "vic",
+      "activity": "API practice",
+      "place": "API field",
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "leg": "drop",
+      "defaultDriver": "carpool",
+      "note": "Standing: Vic carpool drops to API practices every day. Practices only, not games."
+    },
+    {
+      "id": "vic-api-pickup",
+      "kid": "vic",
+      "activity": "API practice",
+      "place": "API field",
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "leg": "pickup",
+      "defaultDriver": "boyd",
+      "note": "Standing: Boyds always pick up Vic from API practices."
+    },
+    {
+      "id": "vic-hornets-drop",
+      "kid": "vic",
+      "activity": "Hornets practice",
+      "place": "Hornets field",
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "leg": "drop",
+      "defaultDriver": "carpool",
+      "note": "Standing: Vic carpool drops to Hornets practices every day. Practices only, not games."
+    },
+    {
+      "id": "vic-hornets-pickup",
+      "kid": "vic",
+      "activity": "Hornets practice",
+      "place": "Hornets field",
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "leg": "pickup",
+      "defaultDriver": "boyd",
+      "note": "Standing: Boyds always pick up Vic from Hornets practices."
+    },
+    {
+      "id": "char-aspire-tue-drop",
+      "kid": "char",
+      "activity": "Aspire practice",
+      "place": "Aspire",
+      "days": [
+        "tue"
+      ],
+      "leg": "drop",
+      "defaultDriver": "carpool",
+      "note": "Standing: Tuesdays Char carpools to Aspire."
+    },
+    {
+      "id": "char-aspire-tue-pickup",
+      "kid": "char",
+      "activity": "Aspire practice",
+      "place": "Aspire",
+      "days": [
+        "tue"
+      ],
+      "leg": "pickup",
+      "defaultDriver": "tbd",
+      "note": "EXAMPLE slot — confirm who picks up Tue Aspire."
+    },
+    {
+      "id": "char-aspire-thu-drop",
+      "kid": "char",
+      "activity": "Aspire practice",
+      "place": "St Mary's HS Annapolis",
+      "days": [
+        "thu"
+      ],
+      "leg": "drop",
+      "defaultDriver": "boyd",
+      "note": "Standing: Thursdays the Boyds drive Char to Aspire at St Mary's HS Annapolis."
+    },
+    {
+      "id": "char-aspire-thu-pickup",
+      "kid": "char",
+      "activity": "Aspire practice",
+      "place": "St Mary's HS Annapolis",
+      "days": [
+        "thu"
+      ],
+      "leg": "pickup",
+      "defaultDriver": "tbd",
+      "note": "EXAMPLE slot — confirm who picks up Thu Aspire at St Mary's."
+    }
+  ],
+  "exampleWeek": {
+    "label": "EXAMPLE fills — replace with real week assignments",
+    "assignments": {
+      "vic-api-drop|mon": {
+        "driver": "team-parent",
+        "example": true,
+        "note": "EXAMPLE — ask before assigning team parent"
+      },
+      "vic-api-drop|tue": {
+        "driver": "carpool",
+        "example": true,
+        "note": "EXAMPLE carpool drop"
+      },
+      "vic-api-drop|wed": {
+        "driver": "melody",
+        "example": true,
+        "note": "EXAMPLE — Needs confirm (Melody)"
+      },
+      "vic-api-pickup|mon": {
+        "driver": "boyd",
+        "example": false,
+        "note": "Boyds pickup"
+      },
+      "vic-api-pickup|tue": {
+        "driver": "miranda",
+        "example": false,
+        "note": "Boyds pickup"
+      },
+      "vic-hornets-drop|thu": {
+        "driver": "chris-beth",
+        "example": true,
+        "note": "EXAMPLE — Needs confirm (Chris/Beth)"
+      },
+      "vic-hornets-pickup|thu": {
+        "driver": "boyd",
+        "example": false,
+        "note": "Boyds pickup"
+      },
+      "char-aspire-tue-drop|tue": {
+        "driver": "carpool",
+        "example": false,
+        "note": "Tue Aspire carpool"
+      },
+      "char-aspire-tue-pickup|tue": {
+        "driver": "team-parent",
+        "example": true,
+        "note": "EXAMPLE — Needs confirm"
+      },
+      "char-aspire-thu-drop|thu": {
+        "driver": "boyd",
+        "example": false,
+        "note": "Boyds drive to St Mary's HS"
+      },
+      "char-aspire-thu-pickup|thu": {
+        "driver": "miranda",
+        "example": true,
+        "note": "EXAMPLE pickup — confirm"
+      }
+    }
+  }
+}

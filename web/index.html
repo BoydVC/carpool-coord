@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Practice Carpool Coord · Char &amp; Vic</title>
+<meta name="theme-color" content="#ecfeff">
+<meta name="description" content="Practice carpool coordination board for Charlotte and Victor — who drops / who picks. Standing facts only. Offline TokenMax build.">
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+
+<header class="top no-print">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="44" height="44">
+        <defs>
+          <linearGradient id="cg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#22d3ee"/>
+            <stop offset="1" stop-color="#38bdf8"/>
+          </linearGradient>
+        </defs>
+        <rect x="6" y="10" width="36" height="28" rx="8" fill="#ecfeff" stroke="url(#cg)" stroke-width="2.4"/>
+        <circle cx="16" cy="32" r="4" fill="#0e7490"/>
+        <circle cx="32" cy="32" r="4" fill="#0e7490"/>
+        <path d="M10 22h18l6 6H14z" fill="#67e8f9" stroke="#0891b2" stroke-width="1.2"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Practice Carpool Coord</h1>
+      <p class="tag">Char · Vic · who drops / who picks · practices only</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="pill soft" id="weekPill">This week</span>
+    <span class="pill warn" title="Never auto-assign grandparents or team parents">Ask first</span>
+    <button type="button" class="btn ghost sm" id="btnPrint" title="Print / AirPrint">🖨 Print</button>
+  </div>
+</header>
+
+<nav class="tabs no-print" role="tablist" aria-label="Carpool screens">
+  <button class="tab active" data-view="board" role="tab" aria-selected="true">📋 Week board</button>
+  <button class="tab" data-view="standing" role="tab" aria-selected="false">📌 Standing rules</button>
+  <button class="tab" data-view="print" role="tab" aria-selected="false">🖨 Print</button>
+  <button class="tab" data-view="about" role="tab" aria-selected="false">About</button>
+</nav>
+
+<main>
+  <section id="view-board" class="view active" role="tabpanel">
+    <div class="board-toolbar no-print">
+      <div>
+        <h2 class="view-title">Week grid · drop vs pickup</h2>
+        <p class="lede">Mon–Sun practice legs for Vic (API + Hornets) and Char (Aspire). Editable notes save in localStorage. <strong class="ex-label">EXAMPLE</strong> fills are labeled — replace freely.</p>
+      </div>
+      <div class="week-nav">
+        <button type="button" class="btn ghost sm" data-week="-1" aria-label="Previous week">←</button>
+        <span class="week-label" id="weekLabel">…</span>
+        <button type="button" class="btn ghost sm" data-week="1" aria-label="Next week">→</button>
+        <button type="button" class="btn ghost sm" data-week="0">Today</button>
+        <button type="button" class="btn ghost sm" id="btnLoadExample" title="Load EXAMPLE sample fills">Load EXAMPLE</button>
+      </div>
+    </div>
+    <div id="boardRoot"></div>
+  </section>
+
+  <section id="view-standing" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Standing practice facts</h2>
+      <p class="lede">Use exactly — do not invent schedules beyond these. Practices only, not games. Always ask before assuming Chris/Beth, Melody, or team-parent coverage.</p>
+      <div id="standingRoot" class="standing-list"></div>
+    </div>
+  </section>
+
+  <section id="view-print" class="view" role="tabpanel">
+    <div class="print-toolbar no-print">
+      <div>
+        <h2 class="view-title">Print week sheet</h2>
+        <p class="lede">AirPrint-friendly drop / pickup grid for the fridge.</p>
+      </div>
+      <button type="button" class="btn primary" id="btnDoPrint">Print now</button>
+    </div>
+    <div id="printSheets" class="print-sheets"></div>
+  </section>
+
+  <section id="view-about" class="view" role="tabpanel">
+    <div class="about-wrap">
+      <div class="panel">
+        <h2 class="view-title">About this board</h2>
+        <p class="lede">Practice carpool coordination for <strong>Charlotte (Char, Aspire U14G Copa)</strong> and <strong>Victor (Vic, API 11u Solomon + Green Hornets 12U)</strong> — who drops / who picks. Not a tactics board.</p>
+        <ul class="about-list">
+          <li>Assignments &amp; notes save in <code>localStorage</code> on this device.</li>
+          <li>Grandparent / team-parent slots show a <span class="badge needs">Needs confirm</span> badge — never auto-assigned as settled.</li>
+          <li>Kids are only Char &amp; Vic.</li>
+          <li>All sample week fills marked <strong class="ex-label">EXAMPLE</strong>.</li>
+        </ul>
+        <div class="about-actions no-print">
+          <button type="button" class="btn ghost" id="btnExport">Export save JSON</button>
+          <button type="button" class="btn ghost danger" id="btnReset">Reset this week</button>
+          <button type="button" class="btn ghost danger" id="btnResetAll">Reset all data</button>
+        </div>
+        <p class="hint" id="aboutHint"></p>
+      </div>
+      <div class="panel soft-panel">
+        <h3>Hash routes</h3>
+        <p class="mono">#board · #standing · #print · #about</p>
+        <h3>TokenMax</h3>
+        <p class="hint">Offline single-file burn build · port 4317</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot no-print">
+  <span>Boyd household · Millersville · practices only</span>
+  <span id="footStat"></span>
+</footer>
+
+<script>
+window.__CARPOOLS__ = /*__CARPOOLS__*/ null /*__/CARPOOLS__*/;
+</script>
+<script>/*__APP__*/</script>
+</body>
+</html>

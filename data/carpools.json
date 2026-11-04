@@ -6,20 +6,20 @@
   "kids": [
     {
       "id": "vic",
-      "name": "Victor",
-      "short": "Vic",
+      "name": "Samuel",
+      "short": "Sam",
       "emoji": "⚾",
       "teams": [
-        "API 11u Solomon baseball",
-        "Green Hornets 12U soccer"
+        "Metro 11U baseball",
+        "Blue Comets 12U soccer"
       ],
       "color": "#38bdf8",
       "accent": "#bae6fd"
     },
     {
       "id": "char",
-      "name": "Charlotte",
-      "short": "Char",
+      "name": "Alex",
+      "short": "Alex",
       "emoji": "⚽",
       "teams": [
         "Aspire U14G Copa"
@@ -36,8 +36,8 @@
       "needsConfirm": false
     },
     {
-      "id": "miranda",
-      "label": "Miranda",
+      "id": "jordan",
+      "label": "Jordan",
       "kind": "parent",
       "needsConfirm": false
     },
@@ -95,7 +95,7 @@
       ],
       "leg": "drop",
       "defaultDriver": "carpool",
-      "note": "Standing: Vic carpool drops to API practices every day. Practices only, not games."
+      "note": "Standing: Sam carpool drops to API practices every day. Practices only, not games."
     },
     {
       "id": "vic-api-pickup",
@@ -113,7 +113,7 @@
       ],
       "leg": "pickup",
       "defaultDriver": "boyd",
-      "note": "Standing: Boyds always pick up Vic from API practices."
+      "note": "Standing: Boyds always pick up Sam from API practices."
     },
     {
       "id": "vic-hornets-drop",
@@ -131,7 +131,7 @@
       ],
       "leg": "drop",
       "defaultDriver": "carpool",
-      "note": "Standing: Vic carpool drops to Hornets practices every day. Practices only, not games."
+      "note": "Standing: Sam carpool drops to Hornets practices every day. Practices only, not games."
     },
     {
       "id": "vic-hornets-pickup",
@@ -149,7 +149,7 @@
       ],
       "leg": "pickup",
       "defaultDriver": "boyd",
-      "note": "Standing: Boyds always pick up Vic from Hornets practices."
+      "note": "Standing: Boyds always pick up Sam from Hornets practices."
     },
     {
       "id": "char-aspire-tue-drop",
@@ -161,7 +161,7 @@
       ],
       "leg": "drop",
       "defaultDriver": "carpool",
-      "note": "Standing: Tuesdays Char carpools to Aspire."
+      "note": "Standing: Tuesdays Alex carpools to Aspire."
     },
     {
       "id": "char-aspire-tue-pickup",
@@ -179,25 +179,25 @@
       "id": "char-aspire-thu-drop",
       "kid": "char",
       "activity": "Aspire practice",
-      "place": "St Mary's HS Annapolis",
+      "place": "Northside Academy",
       "days": [
         "thu"
       ],
       "leg": "drop",
       "defaultDriver": "boyd",
-      "note": "Standing: Thursdays the Boyds drive Char to Aspire at St Mary's HS Annapolis."
+      "note": "Standing: Thursdays the Boyds drive Alex to Aspire at Northside Academy."
     },
     {
       "id": "char-aspire-thu-pickup",
       "kid": "char",
       "activity": "Aspire practice",
-      "place": "St Mary's HS Annapolis",
+      "place": "Northside Academy",
       "days": [
         "thu"
       ],
       "leg": "pickup",
       "defaultDriver": "tbd",
-      "note": "EXAMPLE slot — confirm who picks up Thu Aspire at St Mary's."
+      "note": "EXAMPLE slot — confirm who picks up Thu Aspire at Northside Academy."
     }
   ],
   "exampleWeek": {
@@ -224,7 +224,7 @@
         "note": "Boyds pickup"
       },
       "vic-api-pickup|tue": {
-        "driver": "miranda",
+        "driver": "jordan",
         "example": false,
         "note": "Boyds pickup"
       },
@@ -251,10 +251,10 @@
       "char-aspire-thu-drop|thu": {
         "driver": "boyd",
         "example": false,
-        "note": "Boyds drive to St Mary's HS"
+        "note": "Boyds drive to Northside Academy"
       },
       "char-aspire-thu-pickup|thu": {
-        "driver": "miranda",
+        "driver": "jordan",
         "example": true,
         "note": "EXAMPLE pickup — confirm"
       }

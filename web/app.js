@@ -95,7 +95,7 @@
   }
 
   function defaultForStanding(s) {
-    // Standing defaults that are fixed (Boyds pickup, Boyd Thu drive, etc.)
+    // Standing defaults that are fixed (Riveras pickup, Alex Thu drive, etc.)
     // Never auto-assign grandparent/team-parent as settled.
     const d = driverById(s.defaultDriver);
     if (!d) return { driver: "tbd", example: false };
@@ -281,8 +281,8 @@
             <tbody>${rows}</tbody>
           </table>
           <div class="sheet-foot">
-            <span>Ask before Chris/Beth · Melody · team-parent</span>
-            <span>Boyd fridge · TokenMax</span>
+            <span>Ask before Pat/Morgan · Casey · team-parent</span>
+            <span>Rivera fridge · TokenMax</span>
           </div>
         </article>`;
       })

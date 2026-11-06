@@ -1,25 +1,25 @@
 {
-  "title": "Boyd Practice Carpool Coord",
+  "title": "Rivera Practice Carpool Coord",
   "version": 1,
-  "note": "Standing practice carpool facts only — not games. EXAMPLE fills labeled. Always ask before assuming Chris/Beth, Melody, or team-parent coverage.",
+  "note": "Standing practice carpool facts only — not games. EXAMPLE fills labeled. Always ask before assuming Pat/Morgan, Casey, or team-parent coverage.",
   "weekStarts": "monday",
   "kids": [
     {
       "id": "vic",
-      "name": "Samuel",
-      "short": "Sam",
+      "name": "Jordan",
+      "short": "Jo",
       "emoji": "⚾",
       "teams": [
-        "Metro 11U baseball",
-        "Blue Comets 12U soccer"
+        "API 11u Solomon baseball",
+        "Green Hornets 12U soccer"
       ],
       "color": "#38bdf8",
       "accent": "#bae6fd"
     },
     {
       "id": "char",
-      "name": "Alex",
-      "short": "Alex",
+      "name": "Riley",
+      "short": "Ri",
       "emoji": "⚽",
       "teams": [
         "Aspire U14G Copa"
@@ -31,13 +31,13 @@
   "drivers": [
     {
       "id": "boyd",
-      "label": "Boyd",
+      "label": "Alex",
       "kind": "parent",
       "needsConfirm": false
     },
     {
-      "id": "jordan",
-      "label": "Jordan",
+      "id": "miranda",
+      "label": "Sam",
       "kind": "parent",
       "needsConfirm": false
     },
@@ -49,13 +49,13 @@
     },
     {
       "id": "chris-beth",
-      "label": "Chris/Beth",
+      "label": "Pat/Morgan",
       "kind": "grandparent",
       "needsConfirm": true
     },
     {
       "id": "melody",
-      "label": "Melody",
+      "label": "Casey",
       "kind": "grandparent",
       "needsConfirm": true
     },
@@ -95,7 +95,7 @@
       ],
       "leg": "drop",
       "defaultDriver": "carpool",
-      "note": "Standing: Sam carpool drops to API practices every day. Practices only, not games."
+      "note": "Standing: Jo carpool drops to API practices every day. Practices only, not games."
     },
     {
       "id": "vic-api-pickup",
@@ -113,7 +113,7 @@
       ],
       "leg": "pickup",
       "defaultDriver": "boyd",
-      "note": "Standing: Boyds always pick up Sam from API practices."
+      "note": "Standing: Riveras always pick up Jo from API practices."
     },
     {
       "id": "vic-hornets-drop",
@@ -131,7 +131,7 @@
       ],
       "leg": "drop",
       "defaultDriver": "carpool",
-      "note": "Standing: Sam carpool drops to Hornets practices every day. Practices only, not games."
+      "note": "Standing: Jo carpool drops to Hornets practices every day. Practices only, not games."
     },
     {
       "id": "vic-hornets-pickup",
@@ -149,7 +149,7 @@
       ],
       "leg": "pickup",
       "defaultDriver": "boyd",
-      "note": "Standing: Boyds always pick up Sam from Hornets practices."
+      "note": "Standing: Riveras always pick up Jo from Hornets practices."
     },
     {
       "id": "char-aspire-tue-drop",
@@ -161,7 +161,7 @@
       ],
       "leg": "drop",
       "defaultDriver": "carpool",
-      "note": "Standing: Tuesdays Alex carpools to Aspire."
+      "note": "Standing: Tuesdays Ri carpools to Aspire."
     },
     {
       "id": "char-aspire-tue-pickup",
@@ -185,7 +185,7 @@
       ],
       "leg": "drop",
       "defaultDriver": "boyd",
-      "note": "Standing: Thursdays the Boyds drive Alex to Aspire at Northside Academy."
+      "note": "Standing: Thursdays the Riveras drive Ri to Aspire at Northside Academy."
     },
     {
       "id": "char-aspire-thu-pickup",
@@ -216,27 +216,27 @@
       "vic-api-drop|wed": {
         "driver": "melody",
         "example": true,
-        "note": "EXAMPLE — Needs confirm (Melody)"
+        "note": "EXAMPLE — Needs confirm (Casey)"
       },
       "vic-api-pickup|mon": {
         "driver": "boyd",
         "example": false,
-        "note": "Boyds pickup"
+        "note": "Riveras pickup"
       },
       "vic-api-pickup|tue": {
-        "driver": "jordan",
+        "driver": "miranda",
         "example": false,
-        "note": "Boyds pickup"
+        "note": "Riveras pickup"
       },
       "vic-hornets-drop|thu": {
         "driver": "chris-beth",
         "example": true,
-        "note": "EXAMPLE — Needs confirm (Chris/Beth)"
+        "note": "EXAMPLE — Needs confirm (Pat/Morgan)"
       },
       "vic-hornets-pickup|thu": {
         "driver": "boyd",
         "example": false,
-        "note": "Boyds pickup"
+        "note": "Riveras pickup"
       },
       "char-aspire-tue-drop|tue": {
         "driver": "carpool",
@@ -251,10 +251,10 @@
       "char-aspire-thu-drop|thu": {
         "driver": "boyd",
         "example": false,
-        "note": "Boyds drive to Northside Academy"
+        "note": "Riveras drive to Northside Academy"
       },
       "char-aspire-thu-pickup|thu": {
-        "driver": "jordan",
+        "driver": "miranda",
         "example": true,
         "note": "EXAMPLE pickup — confirm"
       }
